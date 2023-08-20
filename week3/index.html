@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pertemuan 3 Javascript</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,400&display=swap");
+      body {
+        background-color: midnightblue;
+        font-family: "Poppins", sans-serif;
+      }
+      .judul {
+        font-size: 3rem;
+        text-align: center;
+        align-items: center;
+        font-weight: bold;
+        text-transform: uppercase;
+        color: cornflowerblue;
+      }
+      .capt_img {
+        display: block;
+        margin: 0 auto;
+        width: 40%;
+        height: 40%;
+        border-radius: 20px;
+      }
+      .caption {
+        font-size: 1.5rem;
+        text-align: center;
+        align-items: center;
+        margin: 2rem auto;
+        color: azure;
+      }
+      .judul_form {
+        font-size: 2rem;
+        text-align: center;
+        align-items: center;
+        font-weight: bold;
+        margin: 3rem auto;
+        text-transform: uppercase;
+        color: cornflowerblue;
+      }
+      .form_user {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .form_items {
+        text-align: center;
+      }
+      label {
+        display: block;
+        color: azure;
+        margin: 0.5rem auto;
+      }
+      .field {
+        display: block;
+        width: 70vh;
+        padding: 0.7rem 1.3rem;
+        border-radius: 20px;
+        font-size: 1rem;
+      }
+      .btn {
+        margin: 1.5rem auto;
+        padding: 0.7rem 1.3rem;
+        border-radius: 20px;
+        font-size: 1rem;
+        width: 40vh;
+        background-color: cornflowerblue;
+      }
+      table {
+        margin: 0 auto;
+        border-collapse: collapse;
+        width: 70%;
+      }
+      td,
+      th {
+        border: 1px solid cornflowerblue;
+        text-align: left;
+        padding: 0.3rem;
+      }
+      tr {
+        color: azure;
+      }
+      tr:nth-child(even) {
+        color: black;
+        background-color: cornflowerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Bagian Pertemuan 2 -->
+    <div class="container">
+      <h1 class="judul">Pertemuan HTML CSS</h1>
+      <img class="capt_img" src="training_img.jpg" />
+      <p class="caption">Deskripsi dari sesuatu</p>
+
+      <h3 class="judul_form">Bagian Form</h3>
+
+      <form action="#" class="form_user">
+        <div class="form_items">
+          <label for="uname">Username</label>
+          <input
+            class="field"
+            type="text"
+            id="uname"
+            name="uname"
+            placeholder="username.."
+          />
+
+          <br />
+          <br />
+          <label for="email">Email</label>
+          <input
+            class="field"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="email.."
+          />
+          <br />
+          <br />
+          <label for="passwd">Password</label>
+          <input
+            class="field"
+            type="password"
+            name="passwd"
+            id="passwd"
+            placeholder="password.."
+          />
+          <button
+            type="submit"
+            value="true"
+            class="btn"
+            id="btn_submit"
+            onclick="submitFunc()"
+          >
+            Submit
+          </button>
+        </div>
+      </form>
+
+      <table id="table">
+        <thead>
+          <th>username</th>
+          <th>mail</th>
+          <th>password</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td>tester1</td>
+            <td>tester1@mail</td>
+            <td>tester1</td>
+          </tr>
+          <tr>
+            <td>tester2</td>
+            <td>tester2@mail</td>
+            <td>tester2</td>
+          </tr>
+          <tr>
+            <td>tester3</td>
+            <td>tester3@mail</td>
+            <td>tester3</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
