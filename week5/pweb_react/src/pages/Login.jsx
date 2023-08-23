@@ -19,9 +19,9 @@ export const Login = () => {
 
   const submit = (event) => {
     event.preventDefault();
-
     console.log(formInput);
   };
+
   return (
     <div className="grid place-content-center min-h-screen bg-slate-900 gap-y-5">
       <FormField onSubmit={submit}>
