@@ -1,8 +1,8 @@
-const FormField = ({ children, className, ...props }) => {
+const Form = ({ children, className, ...props }) => {
   return (
     <form
       {...props}
-      className={`${className} grid place-content-center gap-y-4`}
+      className={`${className} grid place-content-center gap-5 py-6 items-center border border-royal-blue-400 px-4 rounded overflow-hidden  bg-slate-50`}
     >
       {children}
     </form>
@@ -13,7 +13,7 @@ const FieldSet = ({ children, className, ...props }) => {
   return (
     <fieldset
       {...props}
-      className={`${className} grid gap-5 py-6 items-center border border-royal-blue-400 px-4 rounded overflow-hidden  bg-slate-50`}
+      className={`${className} grid gap-5 py-6 items-center px-4`}
     >
       {children}
     </fieldset>
@@ -29,7 +29,7 @@ const Input = ({ className, ...props }) => {
   );
 };
 
-FormField.FieldSet = FieldSet;
-FormField.Input = Input;
+Form.FieldSet = FieldSet;
+Form.Input = Input;
 
-export default FormField;
+export default Form;
