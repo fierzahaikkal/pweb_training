@@ -39,23 +39,22 @@ $tasks = getTasks(); //mengambil tugas dari dbase
         <input type="text" name="task" placeholder="Enter a new task">
         <button type="submit" name="addTask">Add Task</button>
     </form>
-
     <h2>Tasks</h2>
     <ul>
-      <?php if (isset($tasks) && !empty($tasks)): ?>
-          <?php foreach ($tasks as $task): ?>
-              <li>
-                  <?php echo $task['task']; ?>
-                  <?php if (!$task['completed']): ?>
-                      <a href="index.php?complete=<?php echo $task['id']; ?>">Complete</a>
-                  <?php else: ?>
-                      (Completed)
-                  <?php endif;?>
-              </li>
-          <?php endforeach;?>
-      <?php else: ?>
-          <li>No tasks yet.</li>
-      <?php endif;?>
+        <?php if (isset($tasks) && !empty($tasks)): ?>
+            <?php foreach ($tasks as $task): ?>
+                <li>
+                    <?php echo $task['task']; ?>
+                    <?php if (!$task['completed']): ?>
+                        <a href="index.php?complete=<?php echo $task['id']; ?>">Complete</a>
+                    <?php else: ?>
+                        (Completed)
+                    <?php endif;?>
+                </li>
+            <?php endforeach;?>
+        <?php else: ?>
+            <li>No tasks yet.</li>
+        <?php endif;?>
     </ul>
 </body>
 </html>
